@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>FORM</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        
+    </head>
+    
+<body>
+  <div class="container">
+    <div id="logbox">
+      <form id="signup" method="post" action="/signup">
+        <h1>Create an account</h1>
+        <input class="input pass" id="name" name="user[name]" type="text" placeholder="What's your username?" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required"/>
+        <input class="input pass" id="number" name="user[number]" type="name" placeholder="What's your contact number?" pattern="^[\n]{3,10}$" autofocus="autofocus" required="required"/>
+        <input class="input pass" id="password" name="user[password]" type="password" placeholder="Choose a password" required="required"/>
+        <input class="input pass" id="password" name="user[password2]" type="password" placeholder="Confirm password" required="required"/>
+        <input class="input pass" id="email" name="user[email]" type="email" placeholder="Email address (optional)"/>
+        <input class="inputButton" type="submit" value="Sign me up!"/>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
